@@ -1,150 +1,392 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Azan Garments | Premium Kids Clothing in Lahore</title>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azan Garments | Premium Kidswear in Lahore</title>
+<meta name="description" content="Azan Garments is a Lahore kidswear store for boys and girls ages 1–13. Explore the catalogue, upload product photos, ask on WhatsApp, or visit Madina Bazar, Chungi Amar Sidhu.">
+<meta name="theme-color" content="#0b3027">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com/3.4.17"></script>
 <style>
-:root{--forest:#143b31;--gold:#aa8248;--cream:#f7f1e5;--paper:#fffdf8;--line:#ded1ba;--ink:#143b31;--mut:#617168}
-@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--cream:#f7f1e5}}
-html{scroll-behavior:smooth;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-body{font-family:"Work Sans",sans-serif;color:var(--ink);background:var(--cream)}
-.serif{font-family:"Libre Baskerville",Georgia,serif}
-.slot{position:relative;overflow:hidden;border:1px dashed #b79763;background:linear-gradient(135deg,#eee2cd,#faf5ea)}
-.chip{border:1px solid #cdb993;border-radius:999px;padding:.5rem 1rem;font-size:.875rem;font-weight:600;transition:.2s}
-.chip.on{background:var(--forest);border-color:var(--forest);color:#fff}
-.btn{border-radius:999px;padding:.65rem 1.2rem;font-weight:600;font-size:.9rem;background:var(--forest);color:#fff}
-.btn2{border-radius:999px;padding:.6rem 1.1rem;font-weight:600;font-size:.9rem;border:1px solid var(--gold);color:var(--forest)}
-.inp{width:100%;border:1px solid #cdb993;border-radius:.75rem;padding:.6rem .8rem;background:var(--paper);color:#143b31}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:1rem;overflow:hidden;transition:.3s}.card:hover{box-shadow:0 18px 40px rgba(16,56,45,.13)}
-.hide{display:none!important}
-</style></head>
-<body>
-<div class="bg-[#143b31] px-4 py-2 text-center text-xs font-semibold tracking-[.14em] text-white">AZAN GARMENTS · KIDSWEAR FOR LITTLE MOMENTS</div>
-<header class="sticky top-0 z-40 border-b border-[#ded1ba] bg-[#fffdf8]/95 backdrop-blur">
+:root{--forest:#143b31;--deep:#092a22;--emerald:#1c5042;--ivory:#fffdf8;--cream:#f7f1e5;--sand:#e8dac1;--gold:#aa8248;--goldlight:#dfc69d;--blush:#e6c6bd;--ink:#1c332b;--muted:#617168;--line:#ded1ba}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Work Sans",sans-serif;color:var(--ink);background:var(--cream)}
+.serif{font-family:"Libre Baskerville",serif}
+.page-grain{background-image:radial-gradient(rgba(20,59,49,.06) .75px,transparent .75px);background-size:14px 14px}
+.focus-ring:focus-visible{outline:3px solid #d7aa63;outline-offset:4px}
+.nav-link{position:relative}.nav-link:after{content:"";position:absolute;bottom:-10px;left:0;height:1px;width:0;background:var(--gold);transition:width .25s}.nav-link:hover:after,.nav-link.active:after{width:100%}
+.brand-mark{filter:drop-shadow(0 8px 18px rgba(170,130,72,.18));transition:transform .35s ease,filter .35s ease}.brand-link:hover .brand-mark{transform:rotate(-4deg) scale(1.05);filter:drop-shadow(0 8px 22px rgba(170,130,72,.45))}
+.brand-shine{animation:shine 5s ease-in-out infinite}@keyframes shine{0%,72%,100%{opacity:.08;transform:translateX(-60px)}86%{opacity:.65;transform:translateX(62px)}}
+.editorial-line{position:relative}.editorial-line:before{content:"";position:absolute;width:80px;height:1px;background:var(--gold);left:0;top:-17px}
+.fabric-wave{background:linear-gradient(135deg,#e9d9bd 0%,#f8f0e2 48%,#e0bcad 100%);position:relative;overflow:hidden}.fabric-wave:before{content:"";position:absolute;inset:-30%;background:repeating-radial-gradient(ellipse at 20% 30%,rgba(255,255,255,.58) 0 2px,transparent 3px 18px);transform:rotate(-13deg);opacity:.7}
+.photo-slot{position:relative;overflow:hidden;border:1px dashed rgba(170,130,72,.9);background:linear-gradient(135deg,#eee2cd,#fffaf1)}.photo-slot:before{content:"";position:absolute;width:160px;height:160px;right:-50px;top:-58px;border:1px solid rgba(170,130,72,.32);border-radius:999px}.photo-slot:after{content:"";position:absolute;width:95px;height:95px;left:-28px;bottom:-35px;border:1px solid rgba(20,59,49,.2);border-radius:999px}
+.premium-card{box-shadow:0 14px 38px rgba(16,56,45,.07);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}.premium-card:hover{transform:translateY(-7px);box-shadow:0 26px 55px rgba(16,56,45,.16);border-color:#b79763}
+.filter-btn,.age-filter,.audience-tab{transition:all .22s ease}.filter-btn.active,.age-filter.active,.audience-tab.active{background:var(--forest);border-color:var(--forest);color:#fff;box-shadow:0 8px 16px rgba(20,59,49,.15)}.filter-btn:hover,.age-filter:hover,.audience-tab:hover{transform:translateY(-2px)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+.stitch{stroke-dasharray:4 8;animation:dash 12s linear infinite}@keyframes dash{to{stroke-dashoffset:-120}}
+#backToTop{opacity:0;visibility:hidden;transform:translateY(12px);transition:.25s}#backToTop.show{opacity:1;visibility:visible;transform:none}
+.modal-open{overflow:hidden}.drag-over{border-color:var(--forest)!important;background:#ecf2ee!important;transform:scale(1.01)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["ClothingStore","LocalBusiness"],"name":"Azan Garments","description":"Lahore kidswear store for boys and girls ages 1 to 13.","address":{"@type":"PostalAddress","streetAddress":"Madina Bazar, Chungi Amar Sidhu","addressLocality":"Lahore","addressRegion":"Punjab","addressCountry":"PK"},"telephone":"03164387851","sameAs":["https://wa.me/923164387851","https://maps.app.goo.gl/qQ9JpkhV4ftu1RMF8"]}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+</head>
+<body class="w-full page-grain" style="background: rgb(247, 241, 229);">
+<div class="bg-[#092a22] px-4 py-2 text-center text-[11px] font-bold tracking-[.18em] text-white" style="background: rgb(9, 42, 34);"><span style="color: rgb(255, 255, 255); font-weight: 600; font-size: 16px;">AZAN GARMENTS • KIDSWEAR FOR LITTLE MOMENTS</span></div>
+
+<header id="siteHeader" class="sticky top-0 z-40 border-b border-[#ded1ba]/80 bg-[#fffdf8]/90 backdrop-blur-xl">
 <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
-<a href="#home" class="flex items-center gap-3"><span class="serif flex h-10 w-10 items-center justify-center rounded-full border border-[#aa8248] text-sm font-bold">AG</span><span><b class="serif block">Azan Garments</b><span class="block text-[10px] font-semibold uppercase tracking-[.17em] text-[#aa8248]">Kidswear · Lahore</span></span></a>
-<nav class="hidden gap-6 text-sm font-semibold md:flex"><a href="#home">Home</a><a href="#catalogue">Catalogue</a><a href="#about">About</a><a href="#visit">Visit</a></nav>
-<div class="flex items-center gap-2"><a class="btn hidden sm:inline-block" href="https://wa.me/923164387851" target="_blank" rel="noopener">WhatsApp Us</a></div>
-</div></header>
+<a href="#home" class="brand-link focus-ring flex items-center gap-3 rounded-lg" aria-label="Azan Garments home">
+<svg class="brand-mark h-12 w-12 shrink-0" viewBox="0 0 100 100" role="img" aria-label="Azan Garments AG fashion emblem"><defs><linearGradient id="goldGrad" x1="0" x2="1"><stop stop-color="#8c6435"></stop><stop offset=".5" stop-color="#dfc69d"></stop><stop offset="1" stop-color="#9b713b"></stop></linearGradient></defs><ellipse cx="50" cy="50" rx="43" ry="39" fill="#fffaf1" stroke="url(#goldGrad)" stroke-width="3"></ellipse><path d="M27 38h46l-8-10M50 28v-7c0-4 6-5 6-1 0 3-4 3-4 7" fill="none" stroke="#aa8248" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path><path d="M27 38c4 18 16 29 23 29s19-11 23-29" fill="none" stroke="#143b31" stroke-width="2"></path><text x="50" y="61" text-anchor="middle" font-family="Libre Baskerville,serif" font-size="26" font-weight="700" fill="#143b31">AG</text><path class="brand-shine" d="M24 20L74 75" stroke="#fff" stroke-width="7" stroke-linecap="round"></path></svg>
+<span><span class="serif block text-sm font-bold text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 16px;">Azan Garments</span><span class="block text-[9px] font-bold uppercase tracking-[.16em] text-[#aa8248]" style="color: rgb(170, 130, 72); font-weight: 600; font-size: 16px;">Kids • Tradition • Style</span></span></a>
+<nav class="hidden lg:block" aria-label="Main navigation"><ul class="flex items-center gap-6 text-sm font-semibold text-[#365449]">
+<li><a class="nav-link focus-ring rounded-sm" href="#home">Home</a></li>
+<li><a class="nav-link focus-ring rounded-sm" href="#collections">Collections</a></li>
+<li><a class="nav-link focus-ring rounded-sm" href="#catalogue">Catalogue</a></li>
+<li><a class="nav-link focus-ring rounded-sm" href="#boys">Boys</a></li>
+<li><a class="nav-link focus-ring rounded-sm" href="#girls">Girls</a></li>
+<li><a class="nav-link focus-ring rounded-sm" href="#about">About</a></li>
+<li><a class="nav-link focus-ring rounded-sm" href="#visit">Visit Us</a></li>
+</ul></nav>
+<div class="flex items-center gap-2"><a class="focus-ring hidden rounded-full bg-[#143b31] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#092a22] sm:inline-flex" href="https://wa.me/923164387851" target="_blank" rel="noopener noreferrer" style="background: rgb(20, 59, 49); color: rgb(255, 255, 255); font-weight: 600; font-size: 16px;">WhatsApp Us</a><button id="menuButton" class="focus-ring rounded-full border border-[#ded1ba] p-2 text-[#143b31] lg:hidden" type="button" aria-controls="mobileMenu" aria-expanded="false" aria-label="Open navigation menu"><i data-lucide="menu"></i></button></div>
+</div>
+<nav id="mobileMenu" class="hidden border-t border-[#ded1ba] bg-[#fffdf8] px-5 py-5 lg:hidden" aria-label="Mobile navigation"><ul class="grid gap-2 font-semibold text-[#365449]">
+<li><a class="mobile-link focus-ring block rounded-lg px-3 py-2 hover:bg-[#f7f1e5]" href="#home">Home</a></li>
+<li><a class="mobile-link focus-ring block rounded-lg px-3 py-2 hover:bg-[#f7f1e5]" href="#collections">Collections</a></li>
+<li><a class="mobile-link focus-ring block rounded-lg px-3 py-2 hover:bg-[#f7f1e5]" href="#catalogue">Catalogue</a></li>
+<li><a class="mobile-link focus-ring block rounded-lg px-3 py-2 hover:bg-[#f7f1e5]" href="#boys">Boys</a></li>
+<li><a class="mobile-link focus-ring block rounded-lg px-3 py-2 hover:bg-[#f7f1e5]" href="#girls">Girls</a></li>
+<li><a class="mobile-link focus-ring block rounded-lg px-3 py-2 hover:bg-[#f7f1e5]" href="#about">About</a></li>
+<li><a class="mobile-link focus-ring block rounded-lg px-3 py-2 hover:bg-[#f7f1e5]" href="#visit">Visit Us</a></li>
+</ul></nav>
+</header>
 
 <main>
-<section id="home" class="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:py-20 lg:grid-cols-[1.08fr_.92fr] lg:px-8">
-<div class="flex flex-col justify-center">
-<p class="mb-5 w-fit rounded-full border border-[#d7bb89] bg-[#f3e7d0] px-4 py-2 text-xs font-bold uppercase tracking-[.15em] text-[#70542c]">Welcome to Azan Garments</p>
-<h1 class="serif text-4xl font-bold leading-tight">Little looks. Big moments.</h1>
-<p class="mt-5 leading-8 text-[#52655a]">Khush aamdeed Azan Garments mein — Lahore ki families ke liye bachon ke stylish, comfortable aur traditional kapron ka trusted local destination. 1 saal se 13 saal tak ke bachon aur bachiyon ke liye everyday wear, special occasion outfits aur eastern styles.</p>
-<div class="mt-7 flex flex-wrap gap-3"><a class="btn" href="#catalogue">Explore Collection</a><a class="btn2" href="https://wa.me/923164387851" target="_blank" rel="noopener">WhatsApp Us</a></div>
+<section id="home" class="relative overflow-hidden">
+<div class="absolute inset-0 opacity-50" style="background:radial-gradient(circle at 87% 20%,#e5c9b6 0,transparent 24%),radial-gradient(circle at 14% 70%,#dfc69d 0,transparent 21%)"></div>
+<svg class="absolute right-0 top-10 hidden h-[500px] w-[500px] text-[#aa8248]/25 lg:block" viewBox="0 0 500 500" aria-hidden="true"><path class="stitch" d="M40 440C170 290 270 520 455 94" fill="none" stroke="currentColor" stroke-width="2"></path><circle cx="400" cy="110" r="68" fill="none" stroke="currentColor"></circle><circle cx="90" cy="388" r="36" fill="none" stroke="currentColor"></circle></svg>
+<div class="relative mx-auto grid max-w-7xl gap-12 px-5 py-16 md:py-24 lg:grid-cols-[1.04fr_.96fr] lg:px-8">
+<div class="reveal flex flex-col justify-center">
+<p class="mb-6 w-fit rounded-full border border-[#d7bb89] bg-[#f3e7d0] px-4 py-2 text-[11px] font-bold uppercase tracking-[.18em] text-[#70542c]" style="background: rgb(243, 231, 208); color: rgb(112, 84, 44); font-weight: 700; font-size: 16px;">AZAN GARMENTS • LAHORE</p>
+<h1 class="serif max-w-2xl leading-[1.18] text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 32px;">Little looks. Big moments.</h1>
+<p class="mt-6 max-w-xl text-base leading-8 text-[#52655a]" style="color: rgb(82, 101, 90); font-weight: 400; font-size: 16px;">Khush aamdeed Azan Garments mein — Lahore ki families ke liye boys aur girls ke thoughtful kidswear ka local space. Everyday se celebration tak, apne little one ka next look explore karein.</p>
+<p class="mt-4 max-w-xl text-sm leading-7 text-[#617168]" style="color: rgb(97, 113, 104); font-weight: 400; font-size: 16px;">Ages 1–13 ke liye browse karein, catalogue filters use karein, ya WhatsApp par latest item details pooch lein.</p>
+<div class="mt-8 flex flex-wrap gap-3">
+<a class="focus-ring inline-flex items-center gap-2 rounded-full bg-[#143b31] px-6 py-3 font-semibold text-white shadow-lg shadow-[#143b31]/15 transition hover:-translate-y-1 hover:bg-[#092a22]" href="#collections" style="background: rgb(20, 59, 49); color: rgb(255, 255, 255); font-weight: 600;"><span style="color: rgb(255, 255, 255); font-weight: 600; font-size: 16px;">Explore Collection</span><i data-lucide="arrow-down-right" class="h-4 w-4"></i></a>
+<a class="focus-ring inline-flex items-center gap-2 rounded-full border border-[#aa8248] px-6 py-3 font-semibold text-[#143b31] transition hover:-translate-y-1 hover:bg-[#f4e9d6]" href="https://wa.me/923164387851" target="_blank" rel="noopener noreferrer" style="background: transparent; color: rgb(20, 59, 49); font-weight: 600;"><i data-lucide="message-circle" class="h-4 w-4"></i><span style="color: rgb(20, 59, 49); font-weight: 600; font-size: 16px;">WhatsApp Us</span></a>
 </div>
-<div id="heroPics" class="grid grid-cols-2 gap-3"></div>
+<p class="mt-7 flex items-center gap-2 text-sm font-bold text-[#70542c]" style="color: rgb(112, 84, 44); font-weight: 700; font-size: 16px;">Boys &amp; Girls • Ages 1–13 • Since 2001</p>
+</div>
+<div class="reveal relative min-h-[460px]" style="transition-delay:.12s">
+<div class="fabric-wave absolute inset-x-8 top-8 h-[380px] rotate-2 rounded-[3rem] border border-[#dfc69d]/60"></div>
+<div class="photo-slot absolute left-0 top-0 flex h-[285px] w-[72%] items-center justify-center rounded-[2rem] p-7 shadow-xl"><div class="relative z-10 text-center"><i data-lucide="image-plus" class="mx-auto mb-3 h-9 w-9 text-[#aa8248]"></i><p class="serif text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 16px;">Your product photo here</p><p class="mt-2 text-sm text-[#617168]" style="color: rgb(97, 113, 104); font-weight: 400; font-size: 16px;">Photo coming soon</p></div></div>
+<div class="photo-slot absolute right-0 top-20 flex h-[185px] w-[44%] items-center justify-center rounded-3xl p-4 text-center shadow-lg"><span class="relative z-10 text-sm font-semibold text-[#70542c]" style="color: rgb(112, 84, 44); font-weight: 600; font-size: 16px;">Photo coming soon</span></div>
+<div class="absolute bottom-0 left-[16%] z-10 rounded-2xl border border-[#dfc69d] bg-[#fffdf8]/95 px-5 py-4 shadow-xl backdrop-blur"><p class="serif text-sm text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 16px;">Everyday • Formal • Traditional</p></div>
+<div class="absolute bottom-5 right-3 flex h-28 w-28 rotate-12 items-center justify-center rounded-full border-2 border-[#aa8248] bg-[#143b31] text-center text-[#dfc69d] shadow-xl"><span class="serif text-sm leading-5" style="color: rgb(223, 198, 157); font-weight: 700; font-size: 16px;">KIDS
+1–13</span></div>
+<div class="absolute right-[28%] bottom-20 text-[#143b31]"><i data-lucide="shirt" class="h-14 w-14"></i></div>
+<div class="absolute left-[5%] bottom-28 rounded-full bg-[#e6c6bd] p-3 text-[#143b31]"><i data-lucide="sparkles" class="h-5 w-5"></i></div>
+</div>
+</div>
 </section>
 
-<section class="border-y border-[#ded1ba] bg-[#fffaf1]"><div class="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-[#ded1ba] text-center font-semibold md:grid-cols-4"><p class="p-5">Ages 1–13</p><p class="p-5">Boys &amp; Girls</p><p class="p-5">Everyday to Traditional</p><p class="p-5">Lahore Local Store</p></div></section>
-
-<section id="catalogue" class="mx-auto max-w-7xl px-5 py-16 lg:px-8">
-<p class="text-xs font-bold uppercase tracking-[.18em] text-[#aa8248]">Catalogue</p>
-<h2 class="serif mt-2 text-2xl font-bold">Browse by category, age &amp; occasion</h2>
-<div class="mt-6 rounded-3xl border border-[#ded1ba] bg-[#fffdf8] p-5">
-<div class="grid gap-3 md:grid-cols-[1fr_auto_auto]">
-<input id="q" class="inp" type="search" placeholder="Search: Sherwani, boys, Eid, price...">
-<select id="sort" class="inp"><option value="new">Newest</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option></select>
-<button id="clear" class="btn2" type="button">Clear</button></div>
-<div id="fCat" class="mt-4 flex flex-wrap gap-2"></div>
-<div id="fAud" class="mt-3 flex flex-wrap gap-2"></div>
-<div id="fAge" class="mt-3 flex flex-wrap gap-2"></div>
-<div class="mt-4 flex items-center justify-between"><p id="cnt" class="text-sm font-semibold text-[#70542c]"></p><button id="favOnly" class="chip" type="button">♥ Favourites</button></div>
-</div>
-<div id="grid" class="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3"></div>
-<p id="empty" class="mt-8 hide rounded-2xl border border-dashed border-[#b79763] p-8 text-center text-[#617168]">Abhi is filter ma koi item nahin. Filters change karein ya WhatsApp par poochein.</p>
-</section>
-
-<section id="about" class="mx-auto max-w-7xl px-5 pb-16 lg:px-8"><div class="rounded-[2rem] bg-[#e7dac2] p-8 md:p-12">
-<p class="text-xs font-bold uppercase tracking-[.18em] text-[#70542c]">Our store story</p>
-<h2 class="serif mt-2 text-2xl font-bold">A local store for little celebrations</h2>
-<p class="mt-4 max-w-3xl leading-8 text-[#40584d]">Since 2001, Azan Garments has been serving families in Lahore with kids clothing for boys and girls from 1 to 13 years — Kids Wear, Pant Coat, Kurta Pajama and Sherwani. Visit Madina Bazar, Chungi Amar Sidhu.</p></div></section>
-
-<section id="visit" class="mx-auto max-w-7xl px-5 pb-20 lg:px-8"><div class="grid overflow-hidden rounded-[2rem] border border-[#ded1ba] bg-[#fffdf8] lg:grid-cols-2">
-<div class="p-8 md:p-12">
-<h2 class="serif text-2xl font-bold">Come say salam in Lahore.</h2>
-<address class="mt-5 not-italic leading-8 text-[#52655a]">Madina Bazar, Chungi Amar Sidhu, Lahore, Punjab, Pakistan.</address>
-<p class="mt-4"><b>WhatsApp:</b> <a class="underline" href="https://wa.me/923164387851" target="_blank" rel="noopener">03164387851</a></p>
-<p class="mt-2 text-[#52655a]">Opening hours: Add exact shop timings here.</p>
-<div class="mt-6 flex flex-wrap gap-3"><a class="btn" href="https://maps.app.goo.gl/qQ9JpkhV4ftu1RMF8" target="_blank" rel="noopener">Open Google Maps</a><button id="copyNum" class="btn2" type="button">Copy number</button></div>
-<p id="copyMsg" class="mt-2 min-h-5 text-sm font-semibold text-[#70542c]"></p></div>
-<form id="cf" class="space-y-4 bg-[#e7dac2] p-8 md:p-12" novalidate>
-<h3 class="serif text-xl font-bold">Ask us on WhatsApp</h3>
-<input id="cn" class="inp" placeholder="Your name"><textarea id="cq" class="inp" rows="4" placeholder="Aap kya poochna chahte hain?"></textarea>
-<button class="btn" type="submit">Continue to WhatsApp</button><p id="cm" class="text-sm font-semibold text-[#70542c]"></p></form>
+<section class="border-y border-[#ded1ba] bg-[#fffaf1]"><div class="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-y divide-[#ded1ba] md:grid-cols-4 md:divide-y-0">
+<div class="p-5 text-center"><i data-lucide="cake-slice" class="mx-auto mb-2 h-5 w-5 text-[#aa8248]"></i><p class="font-semibold text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 600; font-size: 16px;">Ages 1–13</p></div>
+<div class="p-5 text-center"><i data-lucide="users-round" class="mx-auto mb-2 h-5 w-5 text-[#aa8248]"></i><p class="font-semibold text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 600; font-size: 16px;">Boys &amp; Girls</p></div>
+<div class="p-5 text-center"><i data-lucide="sparkles" class="mx-auto mb-2 h-5 w-5 text-[#aa8248]"></i><p class="font-semibold text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 600; font-size: 16px;">Everyday to Traditional</p></div>
+<div class="p-5 text-center"><i data-lucide="map-pin" class="mx-auto mb-2 h-5 w-5 text-[#aa8248]"></i><p class="font-semibold text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 600; font-size: 16px;">Lahore Local Store</p></div>
 </div></section>
+
+<section id="about" class="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+<div class="reveal max-w-3xl">
+<p class="editorial-line text-xs font-bold uppercase tracking-[.19em] text-[#aa8248]" style="color: rgb(170, 130, 72); font-weight: 700; font-size: 16px;">The Azan Standard</p>
+<h2 class="serif mt-5 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 24px;">A thoughtful wardrobe for growing personalities.</h2>
+<p class="mt-5 leading-8 text-[#617168]" style="color: rgb(97, 113, 104); font-weight: 400; font-size: 16px;">Azan Garments Lahore ka local kids clothing store hai — boys aur girls, 1 se 13 years ke liye. Everyday wear, family gatherings, Eid, weddings, school events aur special occasions ke liye Kids Wear, Pant Coat, Kurta Pajama aur Sherwani explore karein. Central collection se apni journey start karein.</p>
+<a class="focus-ring mt-5 inline-flex items-center gap-2 rounded text-sm font-bold text-[#70542c] underline decoration-[#aa8248] underline-offset-4" href="#collections" style="color: rgb(112, 84, 44); font-weight: 700; font-size: 16px;">Explore our central collections</a>
+</div>
+<div class="mt-11 grid gap-5 md:grid-cols-3">
+<article class="premium-card rounded-[1.7rem] border border-[#ded1ba] bg-[#fffdf8] p-7" style="background: rgb(255, 253, 248);"><div class="flex h-12 w-12 items-center justify-center rounded-full bg-[#f2e7d2] text-[#aa8248]"><i data-lucide="heart-handshake"></i></div><h3 class="serif mt-6 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 19px;">Comfort first</h3><p class="mt-3 text-sm leading-7 text-[#617168]" style="color: rgb(97, 113, 104); font-weight: 400; font-size: 16px;">Parents apne bachay ke routine aur occasion ke hisaab se category aur age group se browse kar sakte hain.</p></article>
+<article class="premium-card rounded-[1.7rem] border border-[#ded1ba] bg-[#143b31] p-7 text-white" style="background: rgb(20, 59, 49);"><div class="flex h-12 w-12 items-center justify-center rounded-full border border-[#dfc69d] text-[#dfc69d]"><i data-lucide="party-popper"></i></div><h3 class="serif mt-6 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-size: 19px;">Occasion ready</h3><p class="mt-3 text-sm leading-7 text-[#d8e4dc]" style="color: rgb(216, 228, 220); font-weight: 400; font-size: 16px;">Family gathering, school event ya little celebration ke liye search aur filters se ideas dhoondein.</p></article>
+<article class="premium-card fabric-wave rounded-[1.7rem] border border-[#ded1ba] p-7" style="background: rgb(232, 218, 193);"><div class="relative z-10"><div class="flex h-12 w-12 items-center justify-center rounded-full bg-[#fffdf8] text-[#aa8248]"><i data-lucide="moon-star"></i></div><h3 class="serif mt-6 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 19px;">Traditional soul</h3><p class="mt-3 text-sm leading-7 text-[#40584d]" style="color: rgb(64, 88, 77); font-weight: 400; font-size: 16px;">Eastern-style moments ke liye category details browse karein aur exact availability WhatsApp par confirm karein.</p></div></article>
+</div>
+</section>
+
+<section id="collections" class="relative overflow-hidden border-y border-[#ded1ba] bg-[#fffaf1] px-5 py-20 lg:px-8">
+<div class="absolute right-0 top-0 h-72 w-72 rounded-full bg-[#e6c6bd]/45 blur-3xl"></div>
+<div class="relative mx-auto max-w-7xl">
+<div class="reveal flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
+<div class="max-w-2xl">
+<p class="text-xs font-bold uppercase tracking-[.19em] text-[#aa8248]" style="color: rgb(170, 130, 72); font-weight: 700; font-size: 16px;">Our Collections</p>
+<h2 class="serif mt-3 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 24px;">Four signature starting points for little style stories.</h2>
+<p class="mt-4 leading-7 text-[#617168]" style="color: rgb(97, 113, 104); font-weight: 400; font-size: 16px;">Filter by audience or occasion, then use View items to move directly into the matching catalogue search.</p>
+</div>
+<div class="flex flex-wrap gap-2" aria-label="Collection filters"><button class="filter-btn focus-ring active rounded-full border border-[#cdb993] px-4 py-2 text-sm font-semibold" type="button" data-category="all">All</button><button class="filter-btn focus-ring rounded-full border border-[#cdb993] px-4 py-2 text-sm font-semibold" type="button" data-category="boys">Boys</button><button class="filter-btn focus-ring rounded-full border border-[#cdb993] px-4 py-2 text-sm font-semibold" type="button" data-category="girls">Girls</button><button class="filter-btn focus-ring rounded-full border border-[#cdb993] px-4 py-2 text-sm font-semibold" type="button" data-category="everyday">Everyday</button><button class="filter-btn focus-ring rounded-full border border-[#cdb993] px-4 py-2 text-sm font-semibold" type="button" data-category="formal">Formal</button><button class="filter-btn focus-ring rounded-full border border-[#cdb993] px-4 py-2 text-sm font-semibold" type="button" data-category="traditional">Traditional</button></div>
+</div>
+<div id="collectionGrid" class="mt-11 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+<article class="collection-card premium-card overflow-hidden rounded-[1.65rem] border border-[#ded1ba] bg-[#fffdf8]" data-tags="boys girls everyday">
+<div class="photo-slot flex min-h-[220px] items-center justify-center p-6"><div class="relative z-10 text-center"><span class="serif text-5xl text-[#143b31]/85">KW</span><p class="mt-3 text-xs font-bold uppercase tracking-[.12em] text-[#70542c]" style="color: rgb(112, 84, 44); font-weight: 700; font-size: 16px;">Your product photo here</p></div></div>
+<div class="p-6"><span class="rounded-full bg-[#f2e7d2] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#70542c]">Everyday</span><h3 class="serif mt-5 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 19px;">Kids Wear</h3><p class="mt-3 text-sm leading-6 text-[#617168]" style="color: rgb(97, 113, 104); font-weight: 400; font-size: 16px;">Everyday outfits ke liye central starting point — boys aur girls ke casual, family-time aur day-to-day looks explore karein.</p><button class="collection-action focus-ring mt-5 text-sm font-bold text-[#70542c] underline decoration-[#aa8248] underline-offset-4" data-collection="Kids Wear" type="button">View items</button></div>
+</article>
+<article class="collection-card premium-card overflow-hidden rounded-[1.65rem] border border-[#ded1ba] bg-[#fffdf8]" data-tags="boys formal">
+<div class="fabric-wave flex min-h-[220px] items-center justify-center p-6"><div class="relative z-10 text-center"><i data-lucide="badge-check" class="mx-auto h-11 w-11 text-[#143b31]"></i><span class="serif mt-3 block text-4xl text-[#143b31]">PC</span></div></div>
+<div class="p-6"><span class="rounded-full bg-[#143b31] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#dfc69d]">Formal</span><h3 class="serif mt-5 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 19px;">Pant Coat</h3><p class="mt-3 text-sm leading-6 text-[#617168]" style="color: rgb(97, 113, 104); font-weight: 400; font-size: 16px;">Boys ke polished formal looks ke liye category space — family gatherings aur school events ki planning mein helpful.</p><button class="collection-action focus-ring mt-5 text-sm font-bold text-[#70542c] underline decoration-[#aa8248] underline-offset-4" data-collection="Pant Coat" type="button">View items</button></div>
+</article>
+<article class="collection-card premium-card overflow-hidden rounded-[1.65rem] border border-[#ded1ba] bg-[#fffdf8]" data-tags="boys traditional">
+<div class="photo-slot flex min-h-[220px] items-center justify-center p-6"><div class="relative z-10 text-center"><i data-lucide="moon-star" class="mx-auto h-10 w-10 text-[#aa8248]"></i><span class="serif mt-3 block text-4xl text-[#143b31]">KP</span></div></div>
+<div class="p-6"><span class="rounded-full bg-[#f3e7d0] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#70542c]">Traditional</span><h3 class="serif mt-5 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 19px;">Kurta Pajama</h3><p class="mt-3 text-sm leading-6 text-[#617168]" style="color: rgb(97, 113, 104); font-weight: 400; font-size: 16px;">Eastern style ke thoughtful looks ke liye browse karein — Eid aur traditional moments ke liye details store se confirm karein.</p><button class="collection-action focus-ring mt-5 text-sm font-bold text-[#70542c] underline decoration-[#aa8248] underline-offset-4" data-collection="Kurta Pajama" type="button">View items</button></div>
+</article>
+<article class="collection-card premium-card overflow-hidden rounded-[1.65rem] border border-[#ded1ba] bg-[#143b31] text-white" data-tags="boys formal traditional">
+<div class="relative flex min-h-[220px] items-center justify-center overflow-hidden border-b border-[#4f7568] p-6"><svg class="absolute inset-0 h-full w-full text-[#dfc69d]/35" viewBox="0 0 400 200" aria-hidden="true"><path class="stitch" d="M-20 180C80 50 180 250 420 25" fill="none" stroke="currentColor" stroke-width="2"></path></svg><div class="relative z-10 text-center"><i data-lucide="crown" class="mx-auto h-11 w-11 text-[#dfc69d]"></i><span class="serif mt-3 block text-4xl text-white">SH</span></div></div>
+<div class="p-6"><span class="rounded-full border border-[#dfc69d]/70 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#dfc69d]">Celebration</span><h3 class="serif mt-5 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-size: 19px;">Sherwani</h3><p class="mt-3 text-sm leading-6 text-[#d8e4dc]" style="color: rgb(216, 228, 220); font-weight: 400; font-size: 16px;">Special occasion formal traditional looks ke liye starting point — latest item details WhatsApp par pooch sakte hain.</p><button class="collection-action focus-ring mt-5 text-sm font-bold text-[#dfc69d] underline underline-offset-4" data-collection="Sherwani" type="button">View items</button></div>
+</article>
+</div>
+<p id="collectionEmpty" class="hidden mt-8 rounded-2xl border border-dashed border-[#b79763] bg-[#fffdf8] p-6 text-center text-[#617168]" aria-live="polite">Is filter ke liye collection card available nahin hai. All select karke dobara explore karein.</p>
+</div>
+</section>
+
+<section id="catalogue" class="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+<div class="reveal max-w-3xl">
+<p class="text-xs font-bold uppercase tracking-[.19em] text-[#aa8248]" style="color: rgb(170, 130, 72); font-weight: 700; font-size: 16px;">Future-ready catalogue</p>
+<h2 class="serif mt-3 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 24px;">Browse by category, age &amp; occasion.</h2>
+<p class="mt-4 leading-7 text-[#617168]" style="color: rgb(97, 113, 104); font-weight: 400; font-size: 16px;">Category, age aur search filters se apni pasand ke kapre dhoondein. Latest details WhatsApp par confirm karein.</p>
+</div>
+<div class="mt-10 rounded-[1.7rem] border border-[#ded1ba] bg-[#fffdf8] p-5 shadow-sm md:p-7">
+<div class="grid gap-5 lg:grid-cols-[1.2fr_.8fr]">
+<div><label for="productSearch" class="mb-2 block text-sm font-bold text-[#143b31]">Search catalogue</label><div class="relative"><i data-lucide="search" class="absolute left-4 top-3.5 h-5 w-5 text-[#aa8248]"></i><input id="productSearch" class="focus-ring w-full rounded-xl border border-[#cdb993] bg-[#fffdf8] py-3 pl-12 pr-4 text-[#143b31]" type="search" placeholder="Kids Wear, boys, traditional, age group..."></div></div>
+<div class="flex items-end"><button id="clearFilters" class="focus-ring w-full rounded-xl border border-[#aa8248] px-5 py-3 font-semibold text-[#143b31] transition hover:bg-[#f4e9d6]" type="button">Clear Filters</button></div>
+</div>
+<div class="mt-6"><p class="mb-3 text-sm font-bold text-[#143b31]">Filter by age</p>
+<div class="flex flex-wrap gap-2" aria-label="Age filters"><button class="age-filter focus-ring active rounded-full border border-[#cdb993] px-4 py-2 text-sm font-semibold" type="button" data-age="all">All Ages</button><button class="age-filter focus-ring rounded-full border border-[#cdb993] px-4 py-2 text-sm font-semibold" type="button" data-age="1–3 Years">1–3 Years</button><button class="age-filter focus-ring rounded-full border border-[#cdb993] px-4 py-2 text-sm font-semibold" type="button" data-age="4–7 Years">4–7 Years</button><button class="age-filter focus-ring rounded-full border border-[#cdb993] px-4 py-2 text-sm font-semibold" type="button" data-age="8–10 Years">8–10 Years</button><button class="age-filter focus-ring rounded-full border border-[#cdb993] px-4 py-2 text-sm font-semibold" type="button" data-age="11–13 Years">11–13 Years</button></div></div>
+<p id="catalogueCount" class="mt-7 text-sm font-semibold text-[#70542c]" aria-live="polite"></p>
+</div>
+<div id="productGrid" class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3"></div>
+<div id="productEmpty" class="hidden mt-8 rounded-2xl border border-dashed border-[#b79763] bg-[#fffdf8] p-8 text-center"><i data-lucide="search-x" class="mx-auto h-8 w-8 text-[#aa8248]"></i><p class="mt-4 font-semibold text-[#143b31]">Koi matching item nahin mila.</p><p class="mt-2 text-sm text-[#617168]">Search ya filters change karein, ya Clear Filters select karein.</p></div>
+</section>
+
+<section class="bg-[#092a22] px-5 py-20 lg:px-8" aria-labelledby="age-heading">
+<div class="mx-auto max-w-7xl">
+<div class="reveal max-w-2xl">
+<p class="text-xs font-bold uppercase tracking-[.19em] text-[#dfc69d]" style="color: rgb(223, 198, 157); font-weight: 700; font-size: 16px;">Shop by age</p>
+<h2 id="age-heading" class="serif mt-3 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-size: 24px;">A helpful starting point for growing styles.</h2>
+<p class="mt-4 leading-7 text-[#d8e4dc]" style="color: rgb(216, 228, 220); font-weight: 400; font-size: 16px;">Age group se start karein, phir exact fit aur current item details Azan Garments par confirm karein.</p>
+</div>
+<div class="relative mt-12 grid gap-5 md:grid-cols-4">
+<div class="absolute left-[12%] right-[12%] top-7 hidden h-px bg-[#aa8248] md:block"></div>
+<button class="shop-age focus-ring relative rounded-2xl border border-[#4f7568] bg-[#143b31] p-6 text-left text-white transition hover:-translate-y-1 hover:bg-[#1c5042]" type="button" data-age="1–3 Years"><span class="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#dfc69d] bg-[#092a22] serif text-lg text-[#dfc69d]">01</span><span class="serif block text-xl text-[#dfc69d]">1–3 years</span><span class="mt-3 block text-sm leading-6 text-[#d8e4dc]">Little ones ke liye gentle starting point.</span></button>
+<button class="shop-age focus-ring relative rounded-2xl border border-[#4f7568] bg-[#143b31] p-6 text-left text-white transition hover:-translate-y-1 hover:bg-[#1c5042]" type="button" data-age="4–7 Years"><span class="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#dfc69d] bg-[#092a22] serif text-lg text-[#dfc69d]">02</span><span class="serif block text-xl text-[#dfc69d]">4–7 years</span><span class="mt-3 block text-sm leading-6 text-[#d8e4dc]">Everyday aur occasion-ready browsing.</span></button>
+<button class="shop-age focus-ring relative rounded-2xl border border-[#4f7568] bg-[#143b31] p-6 text-left text-white transition hover:-translate-y-1 hover:bg-[#1c5042]" type="button" data-age="8–10 Years"><span class="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#dfc69d] bg-[#092a22] serif text-lg text-[#dfc69d]">03</span><span class="serif block text-xl text-[#dfc69d]">8–10 years</span><span class="mt-3 block text-sm leading-6 text-[#d8e4dc]">Growing personalities ke liye explore karein.</span></button>
+<button class="shop-age focus-ring relative rounded-2xl border border-[#4f7568] bg-[#143b31] p-6 text-left text-white transition hover:-translate-y-1 hover:bg-[#1c5042]" type="button" data-age="11–13 Years"><span class="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#dfc69d] bg-[#092a22] serif text-lg text-[#dfc69d]">04</span><span class="serif block text-xl text-[#dfc69d]">11–13 years</span><span class="mt-3 block text-sm leading-6 text-[#d8e4dc]">Formal aur traditional looks se start karein.</span></button>
+</div>
+</div>
+</section>
+
+<section class="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+<div class="grid gap-6 lg:grid-cols-2">
+<article id="boys" class="premium-card reveal rounded-[2rem] border border-[#ded1ba] bg-[#e7dac2] p-8 md:p-10" style="background: rgb(231, 218, 194);">
+<p class="text-xs font-bold uppercase tracking-[.18em] text-[#70542c]" style="color: rgb(112, 84, 44); font-weight: 700; font-size: 16px;">For boys</p>
+<h2 class="serif mt-3 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 24px;">Everyday, formal &amp; traditional boyswear.</h2>
+<p class="mt-4 leading-7 text-[#4d6257]" style="color: rgb(77, 98, 87); font-weight: 400; font-size: 16px;">Boys catalogue filter se age aur occasion ke mutabiq available items explore karein.</p>
+<button class="audience-tab focus-ring mt-7 rounded-full border border-[#aa8248] px-5 py-3 font-semibold text-[#143b31]" type="button" data-audience="Boys">Browse boys catalogue</button>
+</article>
+<article id="girls" class="premium-card reveal rounded-[2rem] border border-[#ded1ba] bg-[#fffdf8] p-8 md:p-10" style="background: rgb(255, 253, 248);">
+<p class="text-xs font-bold uppercase tracking-[.18em] text-[#aa8248]" style="color: rgb(170, 130, 72); font-weight: 700; font-size: 16px;">For girls</p>
+<h2 class="serif mt-3 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 24px;">Sweet everyday starts, details to discover.</h2>
+<p class="mt-4 leading-7 text-[#617168]" style="color: rgb(97, 113, 104); font-weight: 400; font-size: 16px;">Girls ke liye Kids Wear aur age-appropriate everyday options browse karein. Individual item details step by step add hongi.</p>
+<button class="audience-tab focus-ring mt-7 rounded-full border border-[#aa8248] px-5 py-3 font-semibold text-[#143b31]" type="button" data-audience="Girls">Browse girls catalogue</button>
+</article>
+</div>
+</section>
+
+<section class="border-y border-[#ded1ba] bg-[#fffaf1] px-5 py-20 lg:px-8" aria-labelledby="how-heading">
+<div class="mx-auto max-w-7xl">
+<div class="reveal max-w-2xl">
+<p class="text-xs font-bold uppercase tracking-[.19em] text-[#aa8248]" style="color: rgb(170, 130, 72); font-weight: 700; font-size: 16px;">How it works</p>
+<h2 id="how-heading" class="serif mt-3 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 24px;">A simple journey from inspiration to visit.</h2>
+</div>
+<div class="relative mt-10 grid gap-5 md:grid-cols-4">
+<div class="absolute left-[14%] right-[14%] top-11 hidden h-px bg-[#d7bb89] md:block"></div>
+<article class="relative rounded-2xl border border-[#ded1ba] bg-[#fffdf8] p-6"><span class="serif flex h-12 w-12 items-center justify-center rounded-full border border-[#aa8248] bg-[#fffaf1] text-lg text-[#aa8248]">01</span><h3 class="serif mt-5 text-lg text-[#143b31]">Explore</h3><p class="mt-3 text-sm leading-6 text-[#617168]">Collection aur catalogue se journey start karein.</p></article>
+<article class="relative rounded-2xl border border-[#ded1ba] bg-[#fffdf8] p-6"><span class="serif flex h-12 w-12 items-center justify-center rounded-full border border-[#aa8248] bg-[#fffaf1] text-lg text-[#aa8248]">02</span><h3 class="serif mt-5 text-lg text-[#143b31]">Choose age/category</h3><p class="mt-3 text-sm leading-6 text-[#617168]">Age group aur category filters use karein.</p></article>
+<article class="relative rounded-2xl border border-[#ded1ba] bg-[#fffdf8] p-6"><span class="serif flex h-12 w-12 items-center justify-center rounded-full border border-[#aa8248] bg-[#fffaf1] text-lg text-[#aa8248]">03</span><h3 class="serif mt-5 text-lg text-[#143b31]">Ask on WhatsApp</h3><p class="mt-3 text-sm leading-6 text-[#617168]">Latest details ke liye direct message karein.</p></article>
+<article class="relative rounded-2xl border border-[#ded1ba] bg-[#fffdf8] p-6"><span class="serif flex h-12 w-12 items-center justify-center rounded-full border border-[#aa8248] bg-[#fffaf1] text-lg text-[#aa8248]">04</span><h3 class="serif mt-5 text-lg text-[#143b31]">Visit store</h3><p class="mt-3 text-sm leading-6 text-[#617168]">Madina Bazar, Chungi Amar Sidhu visit karein.</p></article>
+</div>
+</div>
+</section>
+
+<section class="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+<div class="grid gap-5 md:grid-cols-4">
+<article class="premium-card rounded-2xl border border-[#ded1ba] bg-[#fffdf8] p-6"><i data-lucide="message-circle" class="h-6 w-6 text-[#aa8248]"></i><h3 class="serif mt-5 text-[#143b31]">Easy to ask</h3><p class="mt-3 text-sm leading-6 text-[#617168]">WhatsApp par category aur item details pooch sakte hain.</p></article>
+<article class="premium-card rounded-2xl border border-[#ded1ba] bg-[#fffdf8] p-6"><i data-lucide="map-pin" class="h-6 w-6 text-[#aa8248]"></i><h3 class="serif mt-5 text-[#143b31]">Local Lahore store</h3><p class="mt-3 text-sm leading-6 text-[#617168]">Visit karke latest details directly confirm karein.</p></article>
+<article class="premium-card rounded-2xl border border-[#ded1ba] bg-[#fffdf8] p-6"><i data-lucide="images" class="h-6 w-6 text-[#aa8248]"></i><h3 class="serif mt-5 text-[#143b31]">Growing catalogue</h3><p class="mt-3 text-sm leading-6 text-[#617168]">Product photos aur details step by step add hoti rahengi.</p></article>
+<article class="premium-card rounded-2xl border border-[#ded1ba] bg-[#fffdf8] p-6"><i data-lucide="ruler" class="h-6 w-6 text-[#aa8248]"></i><h3 class="serif mt-5 text-[#143b31]">Check before visit</h3><p class="mt-3 text-sm leading-6 text-[#617168]">Exact item sizing aur availability WhatsApp par pooch lein.</p></article>
+</div>
+<div class="relative mt-8 overflow-hidden rounded-[2rem] border border-[#aa8248] bg-[#143b31] px-7 py-12 text-white md:px-12">
+<svg class="absolute inset-0 h-full w-full text-[#dfc69d]/25" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true"><path d="M-40 260C180 35 380 360 620 70S940 150 1040 30" fill="none" stroke="currentColor" stroke-width="3"></path><path class="stitch" d="M0 110C140 250 240 10 450 160S770 50 1000 210" fill="none" stroke="currentColor" stroke-width="2"></path></svg>
+<div class="relative max-w-2xl">
+<p class="text-xs font-bold uppercase tracking-[.18em] text-[#dfc69d]" style="color: rgb(223, 198, 157); font-weight: 700; font-size: 16px;">Made for little celebrations</p>
+<h2 class="serif mt-4 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-size: 24px;">Need the latest item details? Let’s talk on WhatsApp.</h2>
+<p class="mt-4 leading-7 text-[#d8e4dc]" style="color: rgb(216, 228, 220); font-weight: 400; font-size: 16px;">Aap category, age group ya visit plan share karein — current product information ke liye direct WhatsApp message karein.</p>
+<a class="focus-ring mt-7 inline-flex rounded-full bg-[#dfc69d] px-6 py-3 font-semibold text-[#143b31] transition hover:-translate-y-1 hover:bg-white" href="https://wa.me/923164387851" target="_blank" rel="noopener noreferrer" style="background: rgb(223, 198, 157); color: rgb(20, 59, 49); font-weight: 600; font-size: 16px;">Message Azan Garments</a>
+</div>
+</div>
+</section>
+
+<section id="visit" class="px-5 py-20 lg:px-8">
+<div class="mx-auto grid max-w-7xl overflow-hidden rounded-[2rem] border border-[#ded1ba] bg-[#fffdf8] shadow-[0_22px_60px_rgba(16,56,45,.10)] lg:grid-cols-[1.05fr_.95fr]">
+<div class="p-8 md:p-12">
+<p class="text-xs font-bold uppercase tracking-[.18em] text-[#aa8248]" style="color: rgb(170, 130, 72); font-weight: 700; font-size: 16px;">Visit &amp; contact</p>
+<h2 class="serif mt-3 text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 24px;">Come say salam in Lahore.</h2>
+<address class="mt-6 not-italic leading-8 text-[#52655a]" style="color: rgb(82, 101, 90); font-weight: 400; font-size: 16px;">Madina Bazar, Chungi Amar Sidhu, Lahore, Punjab, Pakistan.</address>
+<div class="mt-7 space-y-4 border-t border-[#ded1ba] pt-6">
+<p class="flex gap-3"><i data-lucide="message-circle" class="mt-1 h-5 w-5 shrink-0 text-[#aa8248]"></i><span><strong>WhatsApp:</strong> <a class="focus-ring rounded underline decoration-[#aa8248] underline-offset-4" href="https://wa.me/923164387851" target="_blank" rel="noopener noreferrer">03164387851</a></span></p>
+<p class="flex gap-3"><i data-lucide="clock-3" class="mt-1 h-5 w-5 shrink-0 text-[#aa8248]"></i><span class="text-[#52655a]" style="color: rgb(82, 101, 90); font-weight: 400; font-size: 16px;">Opening hours: Add exact shop timings here.</span></p>
+</div>
+<div class="mt-8 flex flex-wrap gap-3">
+<a class="focus-ring inline-flex items-center gap-2 rounded-full bg-[#143b31] px-5 py-3 text-sm font-semibold text-white hover:bg-[#092a22]" href="https://maps.app.goo.gl/qQ9JpkhV4ftu1RMF8" target="_blank" rel="noopener noreferrer" style="background: rgb(20, 59, 49); color: rgb(255, 255, 255); font-weight: 600;"><i data-lucide="map" class="h-4 w-4"></i><span style="color: rgb(255, 255, 255); font-weight: 600; font-size: 16px;">Open Google Maps</span></a><button id="copyNumber" class="focus-ring inline-flex items-center gap-2 rounded-full border border-[#aa8248] px-5 py-3 text-sm font-semibold text-[#143b31] hover:bg-[#f4e9d6]" type="button"><i data-lucide="copy" class="h-4 w-4"></i>Copy number</button>
+</div>
+<p id="copyStatus" class="mt-3 min-h-5 text-sm font-semibold text-[#70542c]" aria-live="polite"></p>
+</div>
+<div class="relative overflow-hidden bg-[#e7dac2] p-8 md:p-12" style="background: rgb(231, 218, 194);">
+<svg class="absolute inset-0 h-full w-full text-[#aa8248]/35" viewBox="0 0 500 500" aria-hidden="true"><path d="M-20 100C100 160 120 30 220 100s80 190 200 120 90-80 130-20" fill="none" stroke="currentColor" stroke-width="2"></path><path d="M20 420C130 300 180 460 290 340s120-10 210-150" fill="none" stroke="currentColor" stroke-width="2"></path><circle cx="280" cy="210" r="38" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M280 180c-17 0-30 13-30 30 0 22 30 53 30 53s30-31 30-53c0-17-13-30-30-30z" fill="#143b31" stroke="#fffaf1" stroke-width="3"></path></svg>
+<div class="relative">
+<h3 class="serif text-[#143b31]" style="color: rgb(20, 59, 49); font-weight: 700; font-size: 19px;">Ask us on WhatsApp</h3>
+<p class="mt-3 leading-7 text-[#4d6257]" style="color: rgb(77, 98, 87); font-weight: 400; font-size: 16px;">Naam aur apna sawal likhein. Button WhatsApp par aapka message ready karega — koi fake form submission nahin.</p>
+<form id="contactForm" class="mt-7 space-y-4" novalidate>
+<div><label for="contactName" class="mb-2 block text-sm font-bold text-[#143b31]">Your name</label><input id="contactName" class="focus-ring w-full rounded-xl border border-[#cdb993] bg-[#fffdf8] px-4 py-3" required></div>
+<div><label for="contactQuestion" class="mb-2 block text-sm font-bold text-[#143b31]">Your question</label><textarea id="contactQuestion" class="focus-ring w-full rounded-xl border border-[#cdb993] bg-[#fffdf8] px-4 py-3" rows="4" required placeholder="Aap kis category ya age group ke bare mein poochna chahte hain?"></textarea></div>
+<button class="focus-ring rounded-full bg-[#143b31] px-6 py-3 font-semibold text-white hover:bg-[#092a22]" type="submit" style="background: rgb(20, 59, 49); color: rgb(255, 255, 255); font-weight: 600; font-size: 16px;">Continue to WhatsApp</button>
+<p id="formStatus" class="min-h-5 text-sm font-semibold text-[#70542c]" aria-live="polite"></p>
+</form>
+</div>
+</div>
+</div>
+</section>
 </main>
 
-<footer class="bg-[#092a22] px-5 py-10 text-sm text-[#b9cabf]"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 md:flex-row"><span>© <span id="yr"></span> Azan Garments · Madina Bazar, Chungi Amar Sidhu, Lahore</span><a class="font-semibold text-[#dfc69d] underline" href="https://wa.me/923164387851">WhatsApp: 03164387851</a></div></footer>
+<footer class="bg-[#092a22] px-5 py-12 text-[#d8e4dc] lg:px-8" style="background: rgb(9, 42, 34);">
+<div class="mx-auto grid max-w-7xl gap-8 md:grid-cols-2">
+<div class="flex items-start gap-3">
+<svg class="h-12 w-12 shrink-0" viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="50" rx="43" ry="39" fill="none" stroke="#dfc69d" stroke-width="3"></ellipse><path d="M27 38h46l-8-10M50 28v-7c0-4 6-5 6-1" fill="none" stroke="#dfc69d" stroke-width="3"></path><text x="50" y="61" text-anchor="middle" font-family="Libre Baskerville,serif" font-size="26" font-weight="700" fill="#fff">AG</text></svg>
+<div><p class="serif text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-size: 16px;">Azan Garments</p><p class="mt-1 text-xs tracking-widest text-[#dfc69d]" style="color: rgb(223, 198, 157); font-weight: 600; font-size: 16px;">KIDS • TRADITION • STYLE</p></div>
+</div>
+<div><p class="text-sm leading-6 text-[#b9cabf]" style="color: rgb(185, 202, 191); font-weight: 400; font-size: 16px;">Madina Bazar, Chungi Amar Sidhu, Lahore, Punjab, Pakistan</p></div>
+</div>
+<div class="mx-auto mt-9 max-w-7xl border-t border-[#315447] pt-6 text-xs text-[#9fb5aa]">© <span id="currentYear"></span> Azan Garments. All rights reserved.</div>
+</footer>
+<button id="backToTop" class="focus-ring fixed bottom-5 right-5 z-30 rounded-full bg-[#143b31] p-3 text-white shadow-lg hover:bg-[#092a22]" type="button" aria-label="Back to top"><i data-lucide="arrow-up" class="h-5 w-5"></i></button>
 
-<!-- Lightbox -->
-<div id="lb" class="fixed inset-0 z-[60] hide items-center justify-center bg-black/90 p-3"><button id="lbX" class="absolute right-4 top-4 text-3xl text-white" type="button" aria-label="Close">✕</button><button id="lbP" class="absolute left-3 text-4xl text-white" type="button">‹</button><img id="lbI" class="max-h-[88vh] max-w-full rounded-xl object-contain" alt=""><button id="lbN" class="absolute right-3 text-4xl text-white" type="button">›</button></div>
+<div id="productModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#092a22]/75 p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<div class="max-h-[90%] w-full max-w-2xl overflow-y-auto rounded-3xl bg-[#fffdf8] p-6 shadow-2xl md:p-8">
+<div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-[.16em] text-[#aa8248]">Catalogue detail</p><h2 id="modalTitle" class="serif mt-2 text-2xl text-[#143b31]"></h2></div><button id="modalClose" class="focus-ring rounded-full border border-[#cdb993] p-2 text-[#143b31]" type="button" aria-label="Close product details"><i data-lucide="x" class="h-5 w-5"></i></button></div>
+<div id="modalImageSlot" class="photo-slot mt-6 flex min-h-[145px] items-center justify-center rounded-2xl text-center"><span class="relative z-10 text-sm font-semibold text-[#70542c]">Product photo coming soon</span></div>
+<dl id="modalDetails" class="mt-6 grid gap-4 sm:grid-cols-2"></dl>
+<a id="modalWhatsapp" class="focus-ring mt-7 inline-flex items-center gap-2 rounded-full bg-[#143b31] px-5 py-3 font-semibold text-white hover:bg-[#092a22]" href="#" target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle" class="h-4 w-4"></i>Ask on WhatsApp</a>
+</div>
+</div>
 
-<script src="products.js"></script>
+<template id="productTemplate">
+<article class="premium-card overflow-hidden rounded-2xl border border-[#ded1ba] bg-[#fffdf8]">
+<div class="product-image-slot photo-slot flex min-h-[190px] items-center justify-center p-4 text-center"><span class="relative z-10 text-sm font-semibold text-[#70542c]">Product photo coming soon</span></div>
+<div class="p-5">
+<div class="flex items-start justify-between gap-3"><div><h3 data-template-id="product-name" class="serif text-xl text-[#143b31]"></h3><p data-template-id="product-category" class="mt-1 text-sm font-semibold text-[#aa8248]"></p></div><span data-template-id="product-audience" class="rounded-full bg-[#f2e7d2] px-3 py-1 text-xs font-bold text-[#70542c]"></span></div>
+<p data-template-id="product-description" class="mt-4 text-sm leading-6 text-[#617168]"></p>
+<div class="mt-5 grid grid-cols-2 gap-3 text-sm">
+<p><strong class="text-[#143b31]">Age:</strong> <span data-template-id="product-age" class="text-[#617168]"></span></p>
+<p><strong class="text-[#143b31]">Occasion:</strong> <span data-template-id="product-occasion" class="text-[#617168]"></span></p>
+<p><strong class="text-[#143b31]">Price:</strong> <span data-template-id="product-price" class="text-[#617168]"></span></p>
+<p><strong class="text-[#143b31]">Sizes:</strong> <span data-template-id="product-sizes" class="text-[#617168]"></span></p>
+</div>
+<button data-template-id="product-details-button" class="focus-ring mt-6 rounded-full border border-[#aa8248] px-4 py-2 text-sm font-bold text-[#143b31] hover:bg-[#f4e9d6]" type="button"></button>
+</div>
+</article>
+</template>
+
 <script>
-(()=>{
-const WA="https://wa.me/923164387851",CATS=["Kids Wear","Pant Coat","Kurta Pajama","Sherwani"],AUD=["Boys","Girls"],AGES=["1–3 Years","4–7 Years","8–10 Years","11–13 Years"];
-const $=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const S={cat:"all",aud:"all",age:"all",q:"",sort:"new",fav:false};let items=[],db=null,assets=null,canEdit=false,editId=null,newFiles=[],keep=[];
-let favs=[];try{favs=JSON.parse(localStorage.getItem("azFavs")||"[]")}catch(e){}
-const saveFavs=()=>{try{localStorage.setItem("azFavs",JSON.stringify(favs))}catch(e){}};
-const url=f=>f;
-$("yr").textContent=new Date().getFullYear();
+document.addEventListener("DOMContentLoaded", () => {
+  lucide.createIcons();
+  const whatsappBase = "https://wa.me/923164387851";
+  const products = [
+    {id:"kids-wear",name:"Kids Wear",category:"Kids Wear",audience:"Both",age:"1–13 Years",occasion:"Everyday & family time",description:"Category-level placeholder for boys and girls everyday clothing. Details coming soon.",tags:["boys","girls","everyday","1–3 Years","4–7 Years","8–10 Years","11–13 Years"]},
+    {id:"pant-coat",name:"Pant Coat",category:"Pant Coat",audience:"Boys",age:"4–13 Years",occasion:"Formal events",description:"Category-level placeholder for polished boys formal looks. Details coming soon.",tags:["boys","formal","4–7 Years","8–10 Years","11–13 Years"]},
+    {id:"kurta-pajama",name:"Kurta Pajama",category:"Kurta Pajama",audience:"Boys",age:"1–13 Years",occasion:"Eid & traditional gatherings",description:"Category-level placeholder for eastern kidswear. Details coming soon.",tags:["boys","traditional","1–3 Years","4–7 Years","8–10 Years","11–13 Years"]},
+    {id:"sherwani",name:"Sherwani",category:"Sherwani",audience:"Boys",age:"4–13 Years",occasion:"Weddings & celebrations",description:"Category-level placeholder for formal traditional looks. Details coming soon.",tags:["boys","formal","traditional","4–7 Years","8–10 Years","11–13 Years"]},
+    {id:"girls-wear",name:"Girls Kids Wear",category:"Kids Wear",audience:"Girls",age:"1–13 Years",occasion:"Everyday & occasions",description:"Category-level placeholder for girls everyday and age-appropriate options. Details coming soon.",tags:["girls","everyday","traditional","1–3 Years","4–7 Years","8–10 Years","11–13 Years"]}
+  ];
+  const state={category:"all",age:"all",search:"",audience:"all"};
+  const grid=document.getElementById("productGrid"),template=document.getElementById("productTemplate"),count=document.getElementById("catalogueCount"),empty=document.getElementById("productEmpty");
 
-// chips
-function chips(el,list,key,allLabel){el.innerHTML=[["all",allLabel],...list.map(x=>[x,x])].map(([v,l])=>`<button type="button" class="chip ${S[key]===v?"on":""}" data-k="${key}" data-v="${esc(v)}">${esc(l)}</button>`).join("")}
-function drawChips(){chips($("fCat"),CATS,"cat","All Categories");chips($("fAud"),AUD,"aud","Boys & Girls");chips($("fAge"),AGES,"age","All Ages");$("favOnly").classList.toggle("on",S.fav)}
-document.addEventListener("click",e=>{const b=e.target.closest("[data-k]");if(b){S[b.dataset.k]=b.dataset.v;render()}});
-$("q").oninput=e=>{S.q=e.target.value.toLowerCase();render()};$("sort").onchange=e=>{S.sort=e.target.value;render()};
-$("favOnly").onclick=()=>{S.fav=!S.fav;render()};
-$("clear").onclick=()=>{Object.assign(S,{cat:"all",aud:"all",age:"all",q:"",sort:"new",fav:false});$("q").value="";$("sort").value="new";render()};
+  function matches(p){
+    const q=state.search.toLowerCase();
+    const text=(p.name+" "+p.category+" "+p.audience+" "+p.age+" "+p.occasion+" "+p.description).toLowerCase();
+    return (state.category==="all"||p.tags.includes(state.category))&&(state.age==="all"||p.tags.includes(state.age))&&(state.audience==="all"||p.audience===state.audience||p.audience==="Both")&&text.includes(q);
+  }
+  function renderProducts(){
+    grid.innerHTML="";
+    const visible=products.filter(matches);
+    count.textContent=`${visible.length} catalogue ${visible.length===1?"item":"items"} shown`;
+    empty.classList.toggle("hidden",visible.length!==0);
+    visible.forEach(p=>{
+      const node=template.content.cloneNode(true);
+      const article=node.querySelector("article");
+      node.querySelector('[data-template-id="product-name"]').textContent=p.name;
+      node.querySelector('[data-template-id="product-category"]').textContent=p.category;
+      node.querySelector('[data-template-id="product-audience"]').textContent=p.audience;
+      node.querySelector('[data-template-id="product-age"]').textContent=p.age;
+      node.querySelector('[data-template-id="product-occasion"]').textContent=p.occasion;
+      node.querySelector('[data-template-id="product-description"]').textContent=p.description;
+      node.querySelector('[data-template-id="product-price"]').textContent=p.price||"Contact for price";
+      node.querySelector('[data-template-id="product-sizes"]').textContent=p.sizes||"Confirm available sizes";
+      const imageSlot=node.querySelector(".product-image-slot");
+      if(p.image){imageSlot.innerHTML="";const image=document.createElement("img");image.src=p.image;image.alt="Uploaded product preview";image.className="h-48 w-full rounded-xl object-cover";imageSlot.appendChild(image);}
+      const button=node.querySelector('[data-template-id="product-details-button"]');
+      button.textContent="View Details";button.addEventListener("click",()=>openModal(p));
+      article.dataset.productId=p.id;grid.appendChild(node);
+    });
+  }
+  function updateControls(){
+    document.querySelectorAll(".filter-btn").forEach(b=>b.classList.toggle("active",b.dataset.category===state.category));
+    document.querySelectorAll(".age-filter").forEach(b=>b.classList.toggle("active",b.dataset.age===state.age));
+    document.querySelectorAll(".audience-tab").forEach(b=>b.classList.toggle("active",b.dataset.audience===state.audience));
+  }
+  function apply(){updateControls();renderProducts()}
+  document.querySelectorAll(".filter-btn").forEach(b=>b.addEventListener("click",()=>{state.category=b.dataset.category;apply();document.querySelectorAll("#collectionGrid article").forEach(card=>card.classList.toggle("hidden",state.category!=="all"&&!card.dataset.tags.includes(state.category)));const shown=[...document.querySelectorAll("#collectionGrid article")].some(card=>!card.classList.contains("hidden"));document.getElementById("collectionEmpty").classList.toggle("hidden",shown)}));
+  document.querySelectorAll(".age-filter").forEach(b=>b.addEventListener("click",()=>{state.age=b.dataset.age;apply()}));
+  document.querySelectorAll(".audience-tab").forEach(b=>b.addEventListener("click",()=>{state.audience=b.dataset.audience;document.getElementById("catalogue").scrollIntoView({behavior:"smooth"});apply()}));
+  document.getElementById("productSearch").addEventListener("input",e=>{state.search=e.target.value;apply()});
+  document.getElementById("clearFilters").addEventListener("click",()=>{state.category="all";state.age="all";state.search="";state.audience="all";document.getElementById("productSearch").value="";document.querySelectorAll("#collectionGrid article").forEach(c=>c.classList.remove("hidden"));document.getElementById("collectionEmpty").classList.add("hidden");apply()});
+  document.querySelectorAll(".shop-age").forEach(b=>b.addEventListener("click",()=>{state.age=b.dataset.age;document.getElementById("catalogue").scrollIntoView({behavior:"smooth"});apply()}));
+  document.querySelectorAll(".collection-action").forEach(b=>b.addEventListener("click",()=>{state.search=b.dataset.collection;document.getElementById("productSearch").value=b.dataset.collection;document.getElementById("catalogue").scrollIntoView({behavior:"smooth"});apply()}));
 
-// cards
-function card(p){
- const ph=p.photos||[];const n=ph.length;
- const media=n?`<div class="relative aspect-[4/5] bg-[#f2e7d2]"><img data-open="${p.id}" data-i="0" src="${url(ph[0])}" class="h-full w-full cursor-zoom-in object-cover" alt="${esc(p.name)}" loading="lazy">${n>1?`<button data-slide="${p.id}" data-d="-1" class="absolute left-2 top-1/2 rounded-full bg-white/85 px-3 py-1 text-xl" type="button">‹</button><button data-slide="${p.id}" data-d="1" class="absolute right-2 top-1/2 rounded-full bg-white/85 px-3 py-1 text-xl" type="button">›</button><span class="absolute bottom-2 right-2 rounded-full bg-black/60 px-2 py-0.5 text-xs text-white">1/${n}</span>`:""}</div>`:`<div class="slot flex aspect-[4/5] items-center justify-center text-sm font-semibold text-[#70542c]">Photo coming soon</div>`;
- const msg=encodeURIComponent(`Assalam-o-Alaikum, mujhe Azan Garments ka "${p.name}" (${p.category}) chahiye. Price/size confirm karein.`);
- return `<article class="card" data-id="${p.id}">${media}<div class="p-5">
- <div class="flex items-start justify-between gap-2"><div><h3 class="serif text-lg font-bold">${esc(p.name)}</h3><p class="text-sm font-semibold text-[#aa8248]">${esc(p.category)}</p></div><button data-fav="${p.id}" class="text-2xl ${favs.includes(p.id)?"text-red-600":"text-[#b79763]"}" type="button" aria-label="Favourite">${favs.includes(p.id)?"♥":"♡"}</button></div>
- ${p.desc?`<p class="mt-3 text-sm leading-6 text-[#617168]">${esc(p.desc)}</p>`:""}
- <div class="mt-4 grid grid-cols-2 gap-2 text-sm"><p><b>For:</b> ${esc(p.audience)}</p><p><b>Age:</b> ${esc(p.age)}</p><p><b>Occasion:</b> ${esc(p.occasion||"—")}</p><p><b>Sizes:</b> ${esc(p.sizes||"Ask us")}</p></div>
- <p class="mt-3 text-lg font-bold">${p.price?"Rs. "+Number(p.price).toLocaleString():"Contact for price"}</p>
- <div class="mt-4 flex flex-wrap gap-2"><a class="btn" href="${WA}?text=${msg}" target="_blank" rel="noopener">Order on WhatsApp</a>${canEdit?`<button data-edit="${p.id}" class="btn2" type="button">Edit</button><button data-del="${p.id}" class="btn2" type="button">Delete</button>`:""}</div></div></article>`}
-const cur={};
-function render(){
- drawChips();
- let v=items.filter(p=>(S.cat==="all"||p.category===S.cat)&&(S.aud==="all"||p.audience===S.aud||p.audience==="Both")&&(S.age==="all"||p.age===S.age)&&(!S.fav||favs.includes(p.id))&&(!S.q||[p.name,p.category,p.audience,p.age,p.occasion,p.desc,p.sizes].join(" ").toLowerCase().includes(S.q)));
- if(S.sort==="lo")v.sort((a,b)=>(a.price||1e9)-(b.price||1e9));else if(S.sort==="hi")v.sort((a,b)=>(b.price||0)-(a.price||0));
- $("grid").innerHTML=v.map(card).join("");
- $("cnt").textContent=`${v.length} item${v.length===1?"":"s"} shown`;
- $("empty").classList.toggle("hide",v.length>0);
- const pics=items.flatMap(p=>(p.photos||[]).slice(0,1)).slice(0,3);
- const slot=(i,c)=>pics[i]?`<img src="${url(pics[i])}" class="${c} w-full rounded-2xl object-cover" alt="Azan Garments">`:`<div class="slot ${c} flex items-center justify-center rounded-2xl text-sm font-semibold text-[#70542c]">Photo coming soon</div>`;
- $("heroPics").innerHTML=`<div class="col-span-2">${slot(0,"h-64")}</div>${slot(1,"h-36")}${slot(2,"h-36")}`;
-}
+  const modal=document.getElementById("productModal"),close=document.getElementById("modalClose");
+  function openModal(p){
+    document.getElementById("modalTitle").textContent=p.name;
+    const slot=document.getElementById("modalImageSlot");
+    slot.innerHTML=p.image?`<img src="${p.image}" alt="Uploaded product preview" class="h-52 w-full rounded-2xl object-cover">`:'<span class="relative z-10 text-sm font-semibold text-[#70542c]">Product photo coming soon</span>';
+    const fields=[["Product Name",p.name],["Category",p.category],["Suitable For",p.audience],["Age Range",p.age],["Occasion",p.occasion],["Description",p.description],["Price",p.price||"Details coming soon — contact us for current prices."],["Available Sizes",p.sizes||"Details coming soon — confirm available sizes."]];
+    document.getElementById("modalDetails").innerHTML=fields.map(([k,v])=>`<div class="rounded-xl bg-[#f7f1e5] p-4"><dt class="text-xs font-bold uppercase tracking-wide text-[#70542c]">${k}</dt><dd class="mt-1 text-sm leading-6 text-[#40584d]">${v}</dd></div>`).join("");
+    document.getElementById("modalWhatsapp").href=whatsappBase+"?text="+encodeURIComponent(`Assalam-o-Alaikum, mujhe Azan Garments ke ${p.name} ke bare mein maloomat chahiye.`);
+    modal.classList.remove("hidden");modal.classList.add("flex");document.body.classList.add("modal-open");close.focus();
+  }
+  function closeModal(){modal.classList.add("hidden");modal.classList.remove("flex");document.body.classList.remove("modal-open")}
+  close.addEventListener("click",closeModal);modal.addEventListener("click",e=>{if(e.target===modal)closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
 
-// slider + lightbox + fav + edit/delete
-const P=id=>items.find(x=>x.id===id);let lbSet=[],lbI=0;
-function lb(set,i){lbSet=set;lbI=(i+set.length)%set.length;$("lbI").src=url(set[lbI]);$("lb").classList.remove("hide");$("lb").classList.add("flex")}
-document.addEventListener("click",e=>{
- const s=e.target.closest("[data-slide]");if(s){const p=P(s.dataset.slide),c=s.closest("article");let i=((cur[p.id]||0)+Number(s.dataset.d)+p.photos.length)%p.photos.length;cur[p.id]=i;const im=c.querySelector("img");im.src=url(p.photos[i]);im.dataset.i=i;c.querySelector("span").textContent=`${i+1}/${p.photos.length}`;return}
- const o=e.target.closest("[data-open]");if(o){const p=P(o.dataset.open);lb(p.photos,Number(o.dataset.i));return}
- const f=e.target.closest("[data-fav]");if(f){const id=f.dataset.fav;favs=favs.includes(id)?favs.filter(x=>x!==id):[...favs,id];saveFavs();render();return}
- const ed=e.target.closest("[data-edit]");if(ed){openAdm(P(ed.dataset.edit));return}
- const dl=e.target.closest("[data-del]");if(dl){delProd(P(dl.dataset.del))}
+  const menu=document.getElementById("mobileMenu"),menuBtn=document.getElementById("menuButton");
+  function toggleMenu(forceClose){const next=forceClose?false:menu.classList.contains("hidden");menu.classList.toggle("hidden",!next);menuBtn.setAttribute("aria-expanded",String(next))}
+  menuBtn.addEventListener("click",()=>toggleMenu(false));document.querySelectorAll(".mobile-link").forEach(link=>link.addEventListener("click",()=>toggleMenu(true)));
+
+  document.getElementById("copyNumber").addEventListener("click",async()=>{
+    const status=document.getElementById("copyStatus");
+    try{if(navigator.clipboard){await navigator.clipboard.writeText("03164387851")}else{const text=document.createElement("textarea");text.value="03164387851";document.body.appendChild(text);text.select();document.execCommand("copy");text.remove()}status.textContent="Number copied";}catch{status.textContent="Please copy: 03164387851";}
+  });
+  document.getElementById("contactForm").addEventListener("submit",e=>{e.preventDefault();const n=document.getElementById("contactName"),q=document.getElementById("contactQuestion"),s=document.getElementById("formStatus");if(!n.value.trim()||!q.value.trim()){s.textContent="Please enter your name and question.";return;}s.textContent="Opening WhatsApp with your enquiry…";window.open(whatsappBase+"?text="+encodeURIComponent(`Assalam-o-Alaikum, mera naam ${n.value.trim()} hai. ${q.value.trim()}`),"_blank");});
+  const top=document.getElementById("backToTop");window.addEventListener("scroll",()=>top.classList.toggle("show",window.scrollY>500),{passive:true});top.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+  const links=document.querySelectorAll(".nav-link");document.querySelectorAll("main section[id]").forEach(section=>new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)links.forEach(link=>link.classList.toggle("active",link.getAttribute("href")==="#"+entry.target.id))}),{rootMargin:"-45% 0px -45% 0px"}).observe(section));
+  document.getElementById("currentYear").textContent=new Date().getFullYear();
+  renderProducts();
 });
-$("lbX").onclick=()=>{$("lb").classList.add("hide");$("lb").classList.remove("flex")};$("lbP").onclick=()=>lb(lbSet,lbI-1);$("lbN").onclick=()=>lb(lbSet,lbI+1);
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){$("lbX").click()}if(!$("lb").classList.contains("hide")){if(e.key==="ArrowLeft")$("lbP").click();if(e.key==="ArrowRight")$("lbN").click()}});
-
-// contact
-$("copyNum").onclick=async()=>{try{await navigator.clipboard.writeText("03164387851");$("copyMsg").textContent="Number copied"}catch(e){$("copyMsg").textContent="Copy: 03164387851"}};
-$("cf").onsubmit=e=>{e.preventDefault();const n=$("cn").value.trim(),q=$("cq").value.trim();if(!n||!q){$("cm").textContent="Naam aur sawal likhein.";return}window.open(WA+"?text="+encodeURIComponent(`Assalam-o-Alaikum, mera naam ${n} hai. ${q}`),"_blank")};
-
-items=(window.PRODUCTS||[]).map((p,i)=>({id:p.id||"p"+i,created:i,...p}));
-render();
-})();
 </script>
 </body></html>
